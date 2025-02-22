@@ -1,3 +1,7 @@
+# Screen Recording
+
+[Loom Recording Link](https://www.loom.com/share/fb3a160f0d6140d3b1fbb705b731ab8d?sid=ec535856-c74d-4576-abf8-52a5ad8f07b8)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

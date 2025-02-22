@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import db from "../db/db.js"; // Import your database connection
+import db from "../db/db.js";
 
 const SALT_ROUNDS = 10;
 const JWT_SECRET = process.env.JWT_SECRET || "secretkey";
