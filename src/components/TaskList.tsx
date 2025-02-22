@@ -124,7 +124,12 @@ export const TaskList: React.FC<TaskListProps> = ({ isAuthenticated }) => {
                   key={task.id}
                   style={{ border: "1px solid black", padding: "10px" }}>
                   {editingTask?.id === task.id ? (
-                    <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "10px",
+                      }}>
                       <input
                         type="text"
                         value={editingTask.title}
