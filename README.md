@@ -2,12 +2,6 @@
 
 [Loom Recording Link](https://www.loom.com/share/fb3a160f0d6140d3b1fbb705b731ab8d?sid=ec535856-c74d-4576-abf8-52a5ad8f07b8)
 
-# Salary Expectation
-
-I’m open to discussing compensation once I have a better understanding of the role and the overall compensation package.
-I'm confident that we can come to an agreement that reflects my skills, experience, and the value I can bring to the company.
-Expectations based on $20-30/hr internship => $3000 and $4000 a month
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -108,3 +102,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Salary Expectation
+
+Expectations based on $20-30/hr internship on a full-time position => $3000 and $4000 a month
+I’m open to discussing compensation once I have a better understanding of the role and the overall compensation package.
+I'm confident that we can come to an agreement that reflects my skills, experience, and the value I can bring to the company.
