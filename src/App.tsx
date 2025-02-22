@@ -39,7 +39,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="app-footer">
-        <p>Task Management App © {new Date().getFullYear()}</p>
+        <p>Gi Diaz Task Management App © {new Date().getFullYear()}</p>
       </footer>
     </div>
   );

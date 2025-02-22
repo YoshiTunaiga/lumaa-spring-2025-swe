@@ -29,7 +29,14 @@ export const Auth: React.FC<AuthProps> = ({ onAuth }) => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
+    <div
+      style={{
+        padding: "20px",
+        maxWidth: "400px",
+        margin: "auto",
+        width: "100%",
+        border: "1px solid #ccc",
+      }}>
       <h2>{isLogin ? "Login" : "Register"}</h2>
       <form
         onSubmit={handleSubmit}
