@@ -2,6 +2,47 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Installation
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Database Setup**
+
+1. Create a PostgreSQL database:
+
+```bash
+psql postgres
+CREATE DATABASE taskmanager;
+
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env.local` in the root of your project and add the following content:
+
+```
+DB_USER=your_postgres_user
+DB_PASSWORD=your_postgres_password
+DB_HOST=localhost
+DB_PORT=5432
+BE_PORT=8080
+DB_NAME=taskmanager
+JWT_SECRET=your_jwt_secret
+REACT_APP_API_URL=http://localhost:8080
+
+```
+
+1. Run database migrations:
+
+```bash
+npx node server/migrate.js
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
