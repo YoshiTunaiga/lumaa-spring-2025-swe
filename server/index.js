@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import authRoutes from "./routes/auth.js";
-import taskRoutes from "./routes/tasks.js";
+import authRoutes from "./routes/authRoutes.js";
+import taskRoutes from "./routes/taskRoutes.js";
 import { connectDB } from "./db/db.js";
 
 import dotenv from "dotenv"; // Load environment variables from .env file
