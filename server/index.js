@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
-import { connectDB } from "./db/db.js"; // Import the database connection function
+import authRoutes from "./routes/auth.js";
+import taskRoutes from "./routes/tasks.js";
+import { connectDB } from "./db/db.js";
+
 import dotenv from "dotenv"; // Load environment variables from .env file
 dotenv.config({ path: "./.env.local" });
 
@@ -23,8 +26,8 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-// app.use("/auth", authRoutes);
-// app.use("/tasks", taskRoutes);
+app.use("/auth", authRoutes);
+app.use("/tasks", taskRoutes);
 
 connectDB().then(() => {
   app.listen(port, () => {

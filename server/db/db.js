@@ -13,6 +13,7 @@ const db = new pkg.Pool({
   port: DB_PORT,
 });
 
+// Test the connection
 export const connectDB = async () => {
   try {
     await db.query("SELECT 1");
