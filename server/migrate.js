@@ -10,7 +10,7 @@ async function runMigration() {
   try {
     const migrationPath = path.join(
       __dirname,
-      "../server/migrations/create_taskmanager.sql"
+      "../server/migrations/create_taskmanager_tables.sql"
     );
     const sql = fs.readFileSync(migrationPath, "utf8");
 
