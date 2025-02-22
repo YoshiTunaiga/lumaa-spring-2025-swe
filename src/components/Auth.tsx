@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { api } from "../api";
 interface AuthProps {
   onAuth: (token: string) => void;
 }
@@ -10,11 +10,29 @@ export const Auth: React.FC<AuthProps> = ({ onAuth }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = isLogin
+        ? await api.login(username, password)
+        : await api.register(username, password);
+
+      if (response.token) {
+        onAuth(response.token);
+      } else {
+        setError(response.error || "Authentication failed");
+      }
+    } catch (err) {
+      console.log(err);
+      setError("An error occurred");
+    }
+  };
+
   return (
     <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
       <h2>{isLogin ? "Login" : "Register"}</h2>
       <form
-        // onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
         style={{
           display: "flex",
           flexDirection: "column",
