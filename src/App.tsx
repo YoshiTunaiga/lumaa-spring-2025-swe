@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Auth } from "./components/Auth";
 import { auth } from "./utils/auth";
 import "./App.css";
+import { TaskList } from "./components/TaskList";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -30,7 +31,11 @@ const App: React.FC = () => {
       </header>
 
       <main className="app-main">
-        {!isAuthenticated ? <Auth onAuth={handleLogin} /> : null}
+        {isAuthenticated ? (
+          <TaskList isAuthenticated={isAuthenticated} />
+        ) : (
+          <Auth onAuth={handleLogin} />
+        )}
       </main>
 
       <footer className="app-footer">
